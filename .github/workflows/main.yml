@@ -15,9 +15,9 @@ jobs:
       - name: Build project
         run: npm run build
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v2
+        uses: actions/upload-pages-artifact@v3.0.0
         with:
-          path: ${{ env.BUILD_PATH }}/dist
+          path: dist
             
   deploy:
     runs-on: ubuntu-latest
